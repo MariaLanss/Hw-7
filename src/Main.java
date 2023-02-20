@@ -91,10 +91,11 @@ public class Main {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
     }
-
     public static void task8() {
-        for (int year = 0; year <= 2054; year = year + 79) {
-            System.out.println(year);
+        for (int year = 0; year <= 2150; year = year + 79) {
+            if (year > 1850 && year < 2100) {
+                System.out.println(year);
+            }
         }
     }
 }
